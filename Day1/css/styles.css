@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+}
+
+/* Target a Class */
+
+.supplies {
+  border: 1px solid red;
+  width: 60%;
+  margin: auto;
+}
+
+#step1 {
+  color: blue;
+}
+#step2 {
+  color: marenta;
+}
+#step3 {
+  color: purple;
+}

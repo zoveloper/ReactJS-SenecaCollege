@@ -1,0 +1,60 @@
+[8:52 p.m.] Jaya Sigot
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Objects</title>
+  </head>
+  <body>
+    <h1>JavaScript Objects</h1>
+    <script>
+      /*
+1. Creating Objects ========================================================
+To create a new object, use the new keyword followed by the Object keyword.
+We will create an object to represent a cup of coffee.
+*/ let myCoffee = new Object();
+      /*
+2. Properties ==============================================================
+Properties represent data which is associated with and related to a specific
+object.
+They are saved as variables which are attached to the end of an object name
+and are separated from it with a dot. The use of the dot to access object
+properties is known as dot notation.
+*/ myCoffee.size = "Small";
+      myCoffee.creams = 1;
+      myCoffee.sugars = 1;
+      myCoffee.customer = "Jaya";
+      /*
+Properties are used the same way that variables are except they can only be
+accessed through the variable name of the object which they are associatied
+with using dot notation.
+*/ alert(myCoffee.size);
+      /*
+3. Methods =================================================================
+Objects can also perform actions which are represented by functions that are
+attached to end of an object name and which are called methods.
+Methods are actually defined as properties of an object which hold anonymous
+functions. Therefore every method is also a property. Like normal properties methods are
+defined through the name of the object which they are associated with
+using dot notation.
+*/ myCoffee.brewCoffee = function () {
+        alert(
+          myCoffee.size +
+            " coffee," +
+            myCoffee.creams +
+            " creams " +
+            myCoffee.sugars +
+            " sugars for " +
+            myCoffee.customer +
+            "!"
+        );
+      };
+      /*
+To call a method of an object use the variable name of the object and then
+the name of the method including parentheses using dot notation.
+*/ myCoffee.brewCoffee();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Intro to JavaScript</title>
+
+  <!--
+  1. Script Tags ===============================================================
+  To write JavaScript in an HTML page create a script tag. Any code which is
+  inside of the opening and closing script tags will be read as JavaScript
+  code.
+
+  Because script tags are classified as both meta content and flow content
+  they can be placed in either the head tag or the body tag. Any JavaScript code
+  which should run before your HTML page loads should be placed in the head
+  tag.
+  -->
+  
+</head>
+<body>
+  <header>
+    <h1>Intro to JavaScript</h1>
+  </header>
+
+  <main>
+    <p>Press F12 in Chrome or FireFox to open Developer Console</p>
+    <p>Mac Shortkeys: Command + Option + J</p>
+    <p>Windows Shortkeys: Control + Shift + J</p>
+  </main>
+
+  <!--
+  Most of the time you would want to put your script tags at the bottom of the
+  page just before the closing body tag. There are multiple reasons for this.
+
+  Much of the time you will want to use JavaScript to alter your HTML or CSS.
+  HTML pages are read from top to bottom. You would want all of your HTML and
+  CSS to load before you try to alter it using JavaScript. If you did not do
+  this then the JavaScript may run before the HTML elements have loaded and many
+  JavaScript events may never be applied to them.
+
+  Another reason to place your script tags at the bottom of the page is that
+  if JavaScript is placed in the head tag of your page then the HTML can not
+  load until the JS has loaded. Placing your JS at the bottom of the page
+  will increase the loading speed of your site and will also increase your
+  SEO ranking as a result.
+  -->
+
+  <script type=text/javascript>
+  // alert("Hello world!")
+  //ddd
+//5. Variables
+ // to declare a variable wiit the let keyword and a name for the variable. 
+
+ let name = "Jun"
+
+    // we can also decalre the name of the variable and assign a vaue to it in the same lne.
+
+    let favoriteColor="Purple"
+
+  </script> 
+  <!-- 6. External JS Files -->
+  <!-- part one -->
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/primitives.js"></script> 
+</body>
+</html>
