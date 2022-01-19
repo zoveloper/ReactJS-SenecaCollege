@@ -1,1 +1,1 @@
-# ReactJS-Study
+# ReactJS-SenecaCollege
