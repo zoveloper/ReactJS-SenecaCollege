@@ -1,0 +1,14 @@
+.heading {
+  text-align: center;
+}
+#instructions {
+  color: red;
+  margin-left: 3%;
+}
+.step1,
+.step2,
+.step3,
+.step4,
+.step5 {
+  margin-left: 5%;
+}
