@@ -1,6 +1,20 @@
-const homeWork = (a, b = 2) => {
-  alert("Welcome to Seneca College This is a Week " + `${a + b}`);
-};
-homeWork(1); // Methoed
+const studnentInfo = new Object();
 
-const studnentName = ["martin", "jun", "sang"]; // an object with 3 properties
+studnentInfo.age = 23;
+studnentInfo.name = "Jun";
+studnentInfo.email = "jun@seneca.ca";
+
+console.log(studnentInfo);
+
+studnentInfo.jun = () => {
+  alert(
+    "your name is " +
+      studnentInfo.name +
+      "your age is " +
+      studnentInfo.age +
+      "your email address is " +
+      studnentInfo.email
+  );
+};
+
+studnentInfo.jun();
