@@ -11,14 +11,20 @@ const sports = () => {
     console.log("My favorit sports is " + myFavoritSports[i]);
   }
 };
-const sports2 = (datas) => {
-  console.log(datas[0]);
-  const sorting = datas.map((data) => {
-    return data.name;
+const sports2 = (datas, studentName) => {
+  console.log(datas);
+  const sorting = datas.map((result1) => {
+    console.log(result1);
+    return result1.sports;
+  });
+  const finding = datas.find((findResult) => {
+    console.log(findResult);
+    return findResult.name == studentName;
   });
   console.log(sorting);
+  console.log(finding);
 };
 
 console.log(myFavoritSports);
 sports(myFavoritSports);
-sports2(myFavoritSports);
+sports2(myFavoritSports, "Bruce");
