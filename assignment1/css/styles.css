@@ -1,0 +1,22 @@
+.heading1 {
+  display: flex;
+
+  justify-content: center;
+  text-align: center;
+}
+.arti1 {
+  border: 1px solid;
+  box-shadow: 5px 10px pink;
+}
+.box1 {
+  padding: 3%;
+}
+#instructions {
+  color: red;
+}
+
+.step1,
+.step2,
+.step3 {
+  list-style-type: square;
+}

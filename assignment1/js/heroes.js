@@ -139,33 +139,71 @@ const heroes = [
     gender: "F",
     powers: ["Power Absorption"],
     teams: ["X-men"],
-    rogues: ["Emma Frost", "The Brotherhood"],
+    rogues: ["EmmaFrost", "The Brotherhood"],
   },
 ];
 
-// Function 1
+//Function 1
 const getAvengerNames = (heroes) => {
   const teamAvangers = heroes.filter((hero) => {
     return hero.teams == "The Avengers";
   });
-  const heroesName = teamAvangers.map((teamAvanger) => {
-    return teamAvanger.name;
+  const heroesName = teamAvangers.map((datum) => {
+    return datum.name;
   });
   console.log(heroesName);
 };
 getAvengerNames(heroes);
 
 // Function 2
-const getKingpinFoes = (heroes) => {};
-
+const getKingpinFoes = (heroes) => {
+  const findWilson = heroes.filter((hero) => {
+    return hero.rogues.includes("Wilson Fisk") === true;
+  });
+  console.log(findWilson);
+};
+getKingpinFoes(heroes);
 // Function 3
-const getPopularVillains = (heroes) => {};
-
+const getPopularVillains = (heroes) => {
+  const threeRogues = heroes.filter((hero) => {
+    return hero.rogues.length > 3;
+  });
+  const secretId = threeRogues.map((datum) => {
+    return datum.secret_identity;
+  });
+  console.log(secretId);
+};
+getPopularVillains(heroes);
 // Function 4
-const getmemberCount = (heroes, team) => {};
+const getmemberCount = (heroes, team) => {
+  const findHeroes = heroes.filter((hero) => {
+    return hero.teams.includes(team) == true;
+  });
+  console.log(findHeroes.length);
+};
+
+getmemberCount(heroes, "The Avengers");
 
 // Function 5
-const getHeroesBasedOnAge = (heroes, ageRange) => {};
-
+const getHeroesBasedOnAge = (heroes, ageRange) => {
+  const heroAges = heroes.filter((hero) => {
+    return hero.age > ageRange[0] && hero.age < ageRange[1];
+  });
+  const heroName = heroAges.map((datum) => {
+    return datum.name;
+  });
+  console.log(heroName);
+};
+getHeroesBasedOnAge(heroes, [20, 33]);
 // Function 6
-const getHeroesBypower = (heroes, power) => {};
+const getHeroesBypower = (heroes, power) => {
+  const heroPower = heroes.filter((hero) => {
+    return hero.powers.includes(power) == true;
+  });
+  console.log(heroPower);
+  const heroName = heroPower.map((datum) => {
+    return datum.name;
+  });
+  console.log(heroName);
+};
+getHeroesBypower(heroes, "Superhuman strength");
